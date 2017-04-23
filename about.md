@@ -27,7 +27,7 @@ Additionally it is possible to fork the repository and use Github Pages as hosti
 
 For further details on Monochrome, please visit the [repository on Github](https://github.com/thereviewindex/monochrome/).
 
-![Monochrome](img/monochrome01.png "monochrome")
+![Monochrome](/img/monochrome01.png "monochrome")
 
 
 

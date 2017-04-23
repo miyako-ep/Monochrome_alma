@@ -30,11 +30,12 @@
 
 	  </main>
 		
+      {% assign blog_key = site.paginate_path | split: "/" %}
 		  <!-- Pagination links -->
       {% if paginator.total_pages > 1 %}
         <div class="pagination">
           {% if paginator.previous_page == 1 %}
-            <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
+            <a href="{{ '/' | append: site.github_pages_repo_name | append: '/' | append: blog_key[0] }}" class="page-item">&laquo;</a>
           {% elsif paginator.previous_page%}
             <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
           {% else %}
@@ -45,9 +46,9 @@
             {% if page == paginator.page %}
               <span class="page-item">{{ page }}</span>
             {% elsif page == 1 %}
-              <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">{{ page }}</a>
+              <a href="{{ '/' | append: site.github_pages_repo_name | append: '/' | append: blog_key[0] | replace: '//', '/' }}" class="page-item">{{ page }}</a>
             {% else %}
-              <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page-item">{{ page }}</a>
+              <a href="{{ '/' | append: site.github_pages_repo_name | append: '/' | append: site.paginate_path | replace: '//', '/' | replace: ':num', page }}" class="page-item">{{ page }}</a>
             {% endif %}
           {% endfor %}
         

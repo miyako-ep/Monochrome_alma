@@ -179,6 +179,11 @@
     background-color: lighten($text-color, 70%);
   }
 
+.posttag {
+    border: 3px green solid;
+    border-radius: 10px;
+}
+
 .by-line {
   display: block;
   color: lighten($text-color, 25%);
@@ -262,4 +267,47 @@ footer {
   color: $text-color;
   text-align: center;
   padding: 0.6667em 0;
+
+  li {
+        display: inline-block;
+  }
 }
+
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.icon {
+    > svg {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+
+        path {
+            fill: $text-color;
+        }
+    }
+}
+
+
+/* Top Title */
+
+.title_logo {
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+

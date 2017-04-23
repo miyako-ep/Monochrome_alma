@@ -382,6 +382,10 @@ blockquote {
   margin: 23px auto;
   background-color: #e6e6e6; }
 
+.posttag {
+  border: 3px green solid;
+  border-radius: 10px; }
+
 .by-line {
   display: block;
   color: #737373;
@@ -458,6 +462,31 @@ footer {
   color: #333333;
   text-align: center;
   padding: 0.6667em 0; }
+  footer li {
+    display: inline-block; }
+
+.social-media-list {
+  list-style: none;
+  margin-left: 0; }
+  .social-media-list a {
+    text-decoration: none; }
+    .social-media-list a:hover {
+      text-decoration: underline; }
+
+.icon > svg {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle; }
+  .icon > svg path {
+    fill: #333333; }
+
+/* Top Title */
+.title_logo {
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /*
  * A Github stylesheet to highlight code snippet

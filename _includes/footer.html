@@ -1,1 +1,27 @@
-<footer><span>@2017 - Monochrome</span></footer>
+<footer>
+    <ul class="social-media-list">
+        {% if site.github_username %}
+        <li>
+            {% include icon-github.html username=site.github_username %}
+        </li>
+        {% endif %}
+
+        {% if site.twitter_username %}
+        <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+        </li>
+        {% endif %}
+
+        {% if site.tumblr_username %}
+        <li>
+            {% include icon-tumblr.html username=site.tumblr_username %}
+        </li>
+        {% endif %}
+    </ul>
+
+    <span>
+        @2017 - Miyako | Design based on: 
+        <a href="https://github.com/thereviewindex/blog">Monochrome</a> - TheReviewIndex All Rights Reserved.
+    </span>
+
+</footer>
