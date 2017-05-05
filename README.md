@@ -1,12 +1,12 @@
 ## About
 
-[TheReviewIndex blog](https://thereviewindex.com/blog), made with Jekyll.
+[Monochrome_alma](https://miyako-ep.github.io/monochrome_alma), made with Jekyll based on [Monochrome](https://github.com/dyutibarma/monochrome).
 
 ## Template used
 
 [Monochrome](https://github.com/dyutibarma/monochrome)
 
-## added config
+## Added config
 
 Set repository name if you use this theme for gh-pages.
 
@@ -17,5 +17,6 @@ Set repository name if you use this theme for gh-pages.
 miyako-ep
 
 ## License
+
 Released under [MIT License](license.md).
 
